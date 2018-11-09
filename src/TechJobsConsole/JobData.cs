@@ -67,7 +67,7 @@ namespace TechJobsConsole
             {
                 foreach (KeyValuePair<string, string> search in row)
                 {
-                    if (search.Value.ToLower().Contains(searchTerm.ToLower()))
+                    if (search.Value.ToLower().Contains(searchTerm.ToLower()) && !jobs.Contains(row))
                     {
                         jobs.Add(row);
                     }
