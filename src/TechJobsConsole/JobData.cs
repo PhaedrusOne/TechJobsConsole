@@ -71,7 +71,6 @@ namespace TechJobsConsole
                     {
                         jobs.Add(row);
                     }
-
                 }
             }
             return jobs;
